@@ -47,7 +47,7 @@ const deleteArtwork = async (req, res) => {
 
     const artwork = await Artwork.findOneAndDelete({ _id: id })
 
-    if (!recipe) {
+    if (!artwork) {
         return res.status(404).json({ error: 'This is not the artwork you are looking for' })
     }
 

@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 })
 
 // routes
-app.use('/api/artwork', artworkRoutes)
+app.use('/api/artworks', artworkRoutes)
 
 
 // connect to mongoose
